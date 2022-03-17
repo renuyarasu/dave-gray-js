@@ -3,3 +3,6 @@ console.clear();
 
 // Math Methods and Properties
 
+const math = Math.PI;
+
+console.log(math);
