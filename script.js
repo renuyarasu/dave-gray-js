@@ -6,8 +6,6 @@ const myNumber = 7;
 const myString = '7.11yhh1j1j';
 const myFlootNumber = 7.017789;
 
-// Number.parseFloat()
-// The Number.parseFloat() method parses an argument and returns a floating point number. If a number cannot be parsed from the argument, it returns NaN.
 
-console.log(Number.parseFloat(myString).toFixed(4)); // 7.0178
+console.log(isNaN('2ss'));
 
