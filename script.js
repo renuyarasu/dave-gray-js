@@ -2,7 +2,8 @@
 console.clear();
 
 // Math Methods and Properties
+const mathPi = Math.PI;
+const math = Math.trunc(Math.PI);
 
-const math = Math.PI;
-
+console.log(mathPi);
 console.log(math);
