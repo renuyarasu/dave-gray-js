@@ -1,12 +1,10 @@
 // JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours 
 console.clear();
 
+// Number Methods
+const myNumber = 7;
+const myString = '7';
+const myFlootNumber = 7.01;
 
-//String
-//Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
-const myVariable = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-
-// String Methods
-console.log(myVariable.split('')); //true
+console.log(Number(false));
 
