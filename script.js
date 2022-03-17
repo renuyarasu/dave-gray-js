@@ -3,7 +3,7 @@ console.clear();
 
 // Math Methods and Properties
 const mathPi = Math.PI;
-const math = Math.round(3.8);
+const math = Math.ceil(3.9999); //4
 
 console.log(mathPi);
 console.log(math);
