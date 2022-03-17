@@ -2,8 +2,6 @@
 console.clear();
 
 // Math Methods and Properties
-const mathPi = Math.PI;
-const math = Math.min(1, 3, 9, 4, 47);// 1
+const math = Math.floor(Math.random() * 10 + 1);
 
-console.log(mathPi);
 console.log(math);
