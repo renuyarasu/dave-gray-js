@@ -3,7 +3,7 @@ console.clear();
 
 // Math Methods and Properties
 const mathPi = Math.PI;
-const math = Math.pow(2, 10); // 1025
+const math = Math.max(1, 2, 3, 4, 5);// 5
 
 console.log(mathPi);
 console.log(math);
