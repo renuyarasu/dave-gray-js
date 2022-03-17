@@ -8,5 +8,5 @@ console.clear();
 const myVariable = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
 // String Methods
-console.log(myVariable.includes('sit')); //true
+console.log(myVariable.split('')); //true
 
