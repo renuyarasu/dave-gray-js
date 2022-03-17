@@ -3,7 +3,7 @@ console.clear();
 
 // Math Methods and Properties
 const mathPi = Math.PI;
-const math = Math.max(1, 2, 3, 4, 5);// 5
+const math = Math.min(1, 3, 9, 4, 47);// 1
 
 console.log(mathPi);
 console.log(math);
