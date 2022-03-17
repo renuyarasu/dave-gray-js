@@ -8,5 +8,5 @@ console.clear();
 const myVariable = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
 // String Methods
-console.log(myVariable.slice(5, 11)); //ipsum
+console.log(myVariable.toUpperCase()); //ipsum
 
