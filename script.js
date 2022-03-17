@@ -8,5 +8,5 @@ console.clear();
 const myVariable = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
 // Strings: Methods
-console.log(myVariable.indexOf('ipsum')); //6
+console.log(myVariable.lastIndexOf('amet')); //22
 
