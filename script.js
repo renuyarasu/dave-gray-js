@@ -6,11 +6,11 @@ console.clear();
 // condition ? if true : if false
 // ':' else here
 
-let soup = 'Chicken Noodle Soup';
-let isCustomerBanned = false;
-let soupAccess = isCustomerBanned
-    ? 'Sorry! No soup for you'
-    : soup
-        ? `Yes! we've ${soup} today!`
-        : 'No!, soup today!'
-console.log(soupAccess);
+let testScore = 98;
+let myGrade =
+    testScore >= 85 ? 'Grade A'
+        : testScore >= 65 ? 'Grade B'
+            : testScore > 55 ? 'Grade C'
+                : testScore >= 35 ? 'Grade D'
+                    : 'Fail';
+console.log(`My test grade a ${myGrade}.`);
