@@ -2,18 +2,23 @@
 console.clear();
 
 // Conditionals: If Statements
+let testScore = 55;
+let collegeStudent = true;
+let grade;
 
-let customerIsBanned = false;
-let crackers = true;
-let soup = 'Chicken Noodle Soup!';
-let reply;
-if (customerIsBanned) {
-    reply = 'No soup for you!'
-} else if (soup && crackers) {
-    reply = `Here's your order of ${soup} & crackers`
-} else if (soup) {
-    reply = `Here's your order of ${soup}`
+if (testScore >= 90) {
+    grade = 'A';
+} else if (testScore >= 80) {
+    grade = 'B';
+} else if (testScore >= 70) {
+    grade = 'C';
+} else if (testScore >= 60) {
+    grade = 'D';
 } else {
-    reply = "Sorry, we are out of soup."
+    if (collegeStudent) {
+        grade = 'Un-satisfied';
+    } else {
+        grade = 'Fail'
+    }
 }
-console.log(reply);
+console.log(grade);
