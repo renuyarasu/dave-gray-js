@@ -6,11 +6,17 @@ console.clear();
 // condition ? if true : if false
 // ':' else here
 
-let testScore = 98;
-let myGrade =
-    testScore >= 85 ? 'Grade A'
-        : testScore >= 65 ? 'Grade B'
-            : testScore > 55 ? 'Grade C'
-                : testScore >= 35 ? 'Grade D'
-                    : 'Fail';
-console.log(`My test grade a ${myGrade}.`);
+let playerOne = 'rock';
+let computer = 'paper';
+let result =
+    playerOne === computer
+        ? 'Tie Game!'
+        : playerOne === 'rock' && computer === 'paper'
+            ? 'Computer Wins!'
+            : playerOne === 'paper' && computer === 'scissors'
+                ? 'Computer Wins!'
+                : playerOne === 'scissors' && computer === 'rock'
+                    ? 'Computer Wins!'
+                    : 'Player One Wins!';
+console.log(result);
+
