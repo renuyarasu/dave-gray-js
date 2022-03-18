@@ -6,7 +6,11 @@ console.clear();
 // condition ? if true : if false
 // ':' else here
 
-// let soup = 'Chicken Noodle Soup.';
-let soup = false;
-let response = soup ? 'Yes! we have soup.' : 'No!, soup today!';
-console.log(response);
+let soup = 'Chicken Noodle Soup';
+let isCustomerBanned = false;
+let soupAccess = isCustomerBanned
+    ? 'Sorry! No soup for you'
+    : soup
+        ? `Yes! we've ${soup} today!`
+        : 'No!, soup today!'
+console.log(soupAccess);
