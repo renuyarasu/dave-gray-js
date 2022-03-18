@@ -2,17 +2,20 @@
 console.clear();
 
 // Conditionals: Switch Statements
-//syntax
-switch (expression OR value) {
-    case choice_01:
-    //run this code
-    break;
 
-    case choice_02:
-    //run this different code
-    break;
-    //add as many cases as needed
+switch (Math.floor(Math.random() * 5 + 1)) {
+    case 1:
+        console.log('1');
+        break;
+
+    case 2:
+        console.log('2');
+        break;
+
+    case 3:
+        console.log('3');
+        break;
+
     default:
-    //run this code if no case matches
-    // no need for break here
+        console.log('No Match');
 }
