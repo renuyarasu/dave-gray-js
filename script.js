@@ -1,24 +1,18 @@
 // JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours 
 console.clear();
 
-// Conditionals: If Statements
-let testScore = 55;
-let collegeStudent = true;
-let grade;
+// Conditionals: Switch Statements
+//syntax
+switch (expression OR value) {
+    case choice_01:
+    //run this code
+    break;
 
-if (testScore >= 90) {
-    grade = 'A';
-} else if (testScore >= 80) {
-    grade = 'B';
-} else if (testScore >= 70) {
-    grade = 'C';
-} else if (testScore >= 60) {
-    grade = 'D';
-} else {
-    if (collegeStudent) {
-        grade = 'Un-satisfied';
-    } else {
-        grade = 'Fail'
-    }
+    case choice_02:
+    //run this different code
+    break;
+    //add as many cases as needed
+    default:
+    //run this code if no case matches
+    // no need for break here
 }
-console.log(grade);
