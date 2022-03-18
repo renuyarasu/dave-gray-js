@@ -2,5 +2,9 @@
 console.clear();
 // User Input
 
-let myBoolean = confirm('Ok ===True\nCancle===False');
-console.log(myBoolean);
+let name = prompt('Please enter your name');
+if(name){
+    console.log(name);
+}else{
+    console.log('You are not enter name');
+}
