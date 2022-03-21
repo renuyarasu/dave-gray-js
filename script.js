@@ -6,7 +6,5 @@ console.clear();
 
 // Methods: Built-in Functions
 
-const getUserFromEmailId = function(email) {
-    return email.slice(0, email.indexOf('@'));
-}
+const getUserFromEmailId = (email) => email.slice(0, email.indexOf('@'));
 console.log(getUserFromEmailId('renu.yarasu@gmail.com')); // renu.yarasu
