@@ -1,10 +1,30 @@
 // JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours 
 console.clear();
 
-// Functions
-// Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
+// Scope - var, let, const
+// global scope
 
-// Methods: Built-in Functions
+var x = 10; // Function Scoped
+let y = 20; // Block Scoped
+const z = 30;
 
-const toProperCaseName = (name) => name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-console.log(toProperCaseName('renuYarasu'));
+console.log(`Global: ${x}`);
+console.log(`Global: ${y}`);
+console.log(`Global: ${z}`);
+
+function myFunction() {
+    var x = 1;
+    const z = 2;
+    console.log(`Function: ${x}`);
+    console.log(`Function: ${y}`);
+    console.log(`Function: ${z}`);
+    {
+        var x = 11;
+        const z = 22;
+        console.log(`Block: ${x}`);
+        console.log(`Block: ${y}`);
+        console.log(`Block: ${z}`);
+
+    }
+}
+myFunction()
