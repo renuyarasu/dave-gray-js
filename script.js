@@ -6,3 +6,19 @@ console.clear();
 
 // Methods: Built-in Functions
 
+/* function sum(x, y) {
+    console.log(x);
+    console.log(y);
+    return x + y;
+}
+console.log(sum(5)); // NaN
+
+ */
+
+function sum(x, y) {
+    if (x === undefined) {
+        return x + y;
+    }
+    return x + y;
+}
+console.log(sum(5));
