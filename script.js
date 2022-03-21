@@ -4,18 +4,19 @@ console.clear();
 // Objects
 // Key value pairs in curly braces
 
-const myObjects = {
-    name: 'VedaGna',
-    is_school: false,
-    age: 5,
-    hobbies: ['Eat', 'Sleep', 'Play'],
-    beverage: {
-        morning: 'Hot Coffee',
-        evening: 'Cold Coffee',
-    },
-    action: () => 'Hello World!'
+const vehicle = {
+    wheels: 4,
+    color: 'Gray',
+    engine: () => 'Volvo',
 }
 
-console.log(myObjects.beverage.morning); //Hot Coffee
-console.log(myObjects.beverage['evening']); //Cold Coffee
-console.log(myObjects.action()); //Hello World!
+const truck = Object.create(vehicle);
+// const result = truck.wheels; // 4
+// const result = truck.engine(); // Volvo
+
+const car = Object.create(vehicle);
+car.doors = 2;
+const result = car.doors;
+
+
+console.log(result);
