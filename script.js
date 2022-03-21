@@ -9,7 +9,6 @@ myArray[0] = 'VedaGna';
 myArray[1] = 5;
 myArray[2] = true;
 
-console.log(myArray); //refer an array
-console.log(myArray[1]); // second element in array
-console.log(myArray.length);// length property
-console.log(myArray[myArray.length - 1]); // last element in array
+myArray.push('school'); //The push() method adds one or more elements to the end of an array and returns the new length of the array.
+
+console.log(myArray);
