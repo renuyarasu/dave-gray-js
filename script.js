@@ -15,3 +15,14 @@ const values = Object.values(bands);
 
 console.log(keys); // [ 'vocals', 'guitar', 'bass', 'drums' ]
 console.log(values); // [ 'Robert Plant', 'Jimmy Page', 'John Paul', 'John Bonham' ]
+
+for (let job in bands) {
+    console.log(`On ${job}, its's ${bands[job]}!`);
+}
+// On vocals, its's Robert Plant!
+// On guitar, its's Jimmy Page!
+// On bass, its's John Paul!
+// On drums, its's John Bonham!
+
+delete bands.bass;
+console.log(bands);
