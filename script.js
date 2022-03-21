@@ -4,19 +4,14 @@ console.clear();
 // Objects
 // Key value pairs in curly braces
 
-const vehicle = {
-    wheels: 4,
-    color: 'Gray',
-    engine: () => 'Volvo',
+const bands = {
+    vocals: 'Robert Plant',
+    guitar: 'Jimmy Page',
+    bass: 'John Paul',
+    drums: 'John Bonham',
 }
+const keys = Object.keys(bands);
+const values = Object.values(bands);
 
-const truck = Object.create(vehicle);
-// const result = truck.wheels; // 4
-// const result = truck.engine(); // Volvo
-
-const car = Object.create(vehicle);
-car.doors = 2;
-const result = car.doors;
-
-
-console.log(result);
+console.log(keys); // [ 'vocals', 'guitar', 'bass', 'drums' ]
+console.log(values); // [ 'Robert Plant', 'Jimmy Page', 'John Paul', 'John Bonham' ]
