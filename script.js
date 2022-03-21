@@ -6,7 +6,7 @@ console.clear();
 let myNumber = 0;
 
 while (myNumber < 50) {
-    console.log(myNumber);
     myNumber++
+    console.log(myNumber);
 } 
-// 0-49
+// 1-50
