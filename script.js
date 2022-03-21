@@ -6,5 +6,5 @@ console.clear();
 
 // Methods: Built-in Functions
 
-const getUserFromEmailId = (email) => email.slice(0, email.indexOf('@'));
-console.log(getUserFromEmailId('renu.yarasu@gmail.com')); // renu.yarasu
+const toProperCaseName = (name) => name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+console.log(toProperCaseName('renuYarasu'));
