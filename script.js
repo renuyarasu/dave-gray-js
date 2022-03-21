@@ -2,13 +2,11 @@
 console.clear();
 
 // Arrays
-const myArray = [];
+const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
-// Add elements to an array
-myArray[0] = 'VedaGna';
-myArray[1] = 5;
-myArray[2] = true;
+/* const newArray = myArray.slice(2) // The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+console.log(newArray); //[   3, 4, 5, 6, 7, 8, 9, 0]
+ */
 
-myArray.splice(1, 1, 'Yarasu') //The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. To access part of an array without modifying it, see slice().
-
-console.log(myArray); //[ 'VedaGna', 'Yarasu', true ]
+const newArray = myArray.slice(0, 5)
+console.log(newArray); //[ 1, 2, 3, 4, 5]
