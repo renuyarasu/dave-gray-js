@@ -18,3 +18,8 @@ console.log(vocals);
 console.log(guitar);
 console.log(bass);
 console.log(drums);
+
+// function sings({ vocals }) { return `${vocals} Sings!` }; // Robert Plant Sings!
+const sings = ({ vocals }) => `${vocals} Sings!`; // Robert Plant Sings!
+
+console.log(sings(bands));
