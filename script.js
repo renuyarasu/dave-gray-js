@@ -9,6 +9,6 @@ myArray[0] = 'VedaGna';
 myArray[1] = 5;
 myArray[2] = true;
 
-delete myArray[0];
-console.log(myArray); // [ <1 empty item>, 5, true ]
-console.log(myArray[0]); //undefined 
+myArray.splice(1, 1, 'Yarasu') //The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. To access part of an array without modifying it, see slice().
+
+console.log(myArray); //[ 'VedaGna', 'Yarasu', true ]
