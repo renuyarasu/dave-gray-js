@@ -9,6 +9,7 @@ myArray[0] = 'VedaGna';
 myArray[1] = 5;
 myArray[2] = true;
 
-myArray.unshift('school'); // The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+myArray.shift('school'); // The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
 
-console.log(myArray); // [ 'VedaGna', 5, true ]
+
+console.log(myArray); // [ 5, true ]
