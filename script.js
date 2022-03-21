@@ -5,6 +5,6 @@ console.clear();
 const array_01 = [1, 2, 3, 4, 5];
 const array_02 = [6, 7, 8, 9, 0];
 
-const myArray = array_01.concat(array_02)
+const myArray = [...array_01, ...array_02];
 
 console.log(myArray); // [  1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
