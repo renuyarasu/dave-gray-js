@@ -25,4 +25,4 @@ for (let job in bands) {
 // On drums, its's John Bonham!
 
 delete bands.bass;
-console.log(bands);
+console.log(bands.hasOwnProperty('bass')); //false
