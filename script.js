@@ -3,6 +3,14 @@ console.clear();
 // Loops
 // For Loops
 
-for (let i = 0; i < 5; i++) {
-    console.log(i);
+let name = 'vedagna';
+for (let i = 0; i < name.length; i++) {
+    console.log(name.charAt(i));
 }
+// v
+// e
+// d
+// a
+// g
+// n
+// a
