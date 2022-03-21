@@ -3,10 +3,10 @@ console.clear();
 // Loops
 // While Loops
 
-let myNumber = 1;
+let myNumber = 0;
 
-while (myNumber <= 50) {
-    console.log(myNumber);
+do {
     myNumber++
-} 
+    console.log(myNumber);
+} while (myNumber < 50)
 // 1-50
