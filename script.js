@@ -1,12 +1,8 @@
 // JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours 
 console.clear();
 // Loops
-// While Loops
+// For Loops
 
-let myNumber = 0;
-
-do {
-    myNumber++
-    console.log(myNumber);
-} while (myNumber < 50)
-// 1-50
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
