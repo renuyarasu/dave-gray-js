@@ -22,4 +22,5 @@ Adding new property values to the element
 Appending the new element to the DOM
 Creating new elements with a loop */
 
-
+const view1 = document.getElementById('view1');
+console.log(view1);
