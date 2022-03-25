@@ -23,36 +23,30 @@ Appending the new element to the DOM
 Creating new elements with a loop */
 
 const view1 = document.getElementById('view1');
-// console.log(view1);
+view1.style.display = 'none';
+const view2 = document.getElementById('view2');
+view2.style.display = 'flex';
 
-const view2 = document.getElementsByClassName('view2');
-// console.log(view2);
-
-const views = document.getElementsByClassName('view');
-// console.log(views);
-
-const queryViews = document.querySelectorAll('.view');
-// console.log(queryViews);
-
-const divs = document.querySelectorAll('div');
-// console.log(divs);
-
-const tagDiv = document.getElementsByTagName('div');
-// console.log(tagDiv);
-
-const evenDivs = view1.querySelectorAll('div:nth-of-type(2n)')
-// console.log(evenDivs);
-
-const oddDivs = view1.querySelectorAll('div:nth-of-type(2n+1)');
-// console.log(oddDivs);
-
-for (let i = 0; i < evenDivs.length; i++) {
-    evenDivs[i].style.backgroundColor = 'crimson';
-    // evenDivs[i].style.width = '150px';
-    // evenDivs[i].style.height = '150px';
-    // evenDivs[i].textContent = ('00');
-    // evenDivs[i].innerHTML = '<h1>0</h1>';
-    // evenDivs[i].style.justifyContent = 'flex-start';
-    evenDivs[i].remove();
+while (view2.lastChild) {
+    view2.lastChild.remove();
 }
-// console.log(evenDivs[0].nextElementSibling.previousElementSibling.style.background = 'gold');
+
+const createDivs = (parent, iterator) => {
+    const newDiv = document.createElement('div');
+    newDiv.textContent = iterator;
+    newDiv.style.background = 'white';
+    newDiv.style.color = '#000';
+    newDiv.style.fontWeight = '700';
+    newDiv.style.width = '100px';
+    newDiv.style.height = '100px';
+    newDiv.style.margin = '10px';
+    newDiv.style.display = 'flex';
+    newDiv.style.justifyContent = 'center';
+    newDiv.style.alignItems = 'center';
+    newDiv.style.flexDirection = 'column';
+    parent.append(newDiv);
+}
+createDivs(view2, 10); // for create single div 
+for( let i = 0 ; i<=12; i++){
+    createDivs(view2, i)
+}
