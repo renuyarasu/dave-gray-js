@@ -25,3 +25,8 @@ const sendJSON = JSON.stringify(myObject);
 console.log(sendJSON); // {"name":"VedaGna","hobbies":["eat","sleep","code"]}
 console.log(typeof sendJSON); //string
 console.log(sendJSON.name); // undefined
+
+const receiveJSON = JSON.parse(sendJSON);
+console.log(receiveJSON); // { name: 'VedaGna', hobbies: [ 'eat', 'sleep', 'code' ] }
+console.log(typeof receiveJSON); //object
+console.log(receiveJSON.name); // VedaGna
