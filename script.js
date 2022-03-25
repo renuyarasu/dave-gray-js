@@ -53,5 +53,6 @@ for (let i = 0; i < evenDivs.length; i++) {
     // evenDivs[i].textContent = ('00');
     // evenDivs[i].innerHTML = '<h1>0</h1>';
     // evenDivs[i].style.justifyContent = 'flex-start';
+    evenDivs[i].remove();
 }
-console.log(evenDivs[0].nextElementSibling.previousElementSibling.style.background = 'gold');
+// console.log(evenDivs[0].nextElementSibling.previousElementSibling.style.background = 'gold');
