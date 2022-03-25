@@ -35,7 +35,10 @@ const queryViews = document.querySelectorAll('.view');
 // console.log(queryViews);
 
 const divs = document.querySelectorAll('div');
-console.log(divs);
+// console.log(divs);
 
 const tagDiv = document.getElementsByTagName('div');
-console.log(tagDiv);
+// console.log(tagDiv);
+
+const evenDivs = view1.querySelectorAll('div:nth-of-type(2n)');
+console.log(evenDivs);
