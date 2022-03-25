@@ -44,4 +44,13 @@ const evenDivs = view1.querySelectorAll('div:nth-of-type(2n)')
 // console.log(evenDivs);
 
 const oddDivs = view1.querySelectorAll('div:nth-of-type(2n+1)');
-console.log(oddDivs);
+// console.log(oddDivs);
+
+for (let i = 0; i < evenDivs.length; i++) {
+    evenDivs[i].style.backgroundColor = 'crimson';
+    evenDivs[i].style.width = '150px';
+    evenDivs[i].style.height = '150px';
+    evenDivs[i].textContent = ('00');
+    evenDivs[i].innerHTML = '<h1>0</h1>';
+    evenDivs[i].style.justifyContent = 'flex-start';
+}
