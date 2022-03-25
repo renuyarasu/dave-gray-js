@@ -19,15 +19,20 @@ when attempting to use a value in an inappropriate way. */
 
 const makeError = () => {
     try {
-        const name = 'VedaGna';
-        name = 'Gnapika';
+        throw new customError('This is a custom error')
     } catch (err) {
-        console.warn(err);
+        /* console.warn(err);
         console.table(err);
-        console.error(err);
+        console.error(err);*/
         console.error(err.name);
-        console.error(err.message);
+        console.error(err.message); 
         console.error(err.stack);
     }
 }
 makeError();
+
+function customError() {
+    this.message = this.message;
+    this.name = customError;
+    this.stack = `${this.name} ${this.message}`;
+}
