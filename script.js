@@ -54,4 +54,4 @@ for (let i = 0; i < evenDivs.length; i++) {
     evenDivs[i].innerHTML = '<h1>0</h1>';
     evenDivs[i].style.justifyContent = 'flex-start';
 }
-console.log(evenDivs[0].parentElement.children);
+console.log(evenDivs[0].parentElement.childNodes);
