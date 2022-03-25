@@ -9,12 +9,19 @@ class Pizza {
         this.type = typePizza;
         this.size = sizePizza;
         this.crust = 'original';
+        this.toppins = [];
     }
-    get pizzaCrust() {
+    getCrust() {
         return this.crust;
     }
-    set pizzaCrust(pizzaCrust) {
+    setCrust(pizzaCrust) {
         this.crust = pizzaCrust;
+    }
+    getToppins() {
+        return this.toppins;
+    }
+    setToppins(toppins) {
+        this.toppins.push(toppins)
     }
     bake() {
         console.log(`Baking a ${this.size} ${this.type} ${this.crust} crust pizza.`);
@@ -22,6 +29,10 @@ class Pizza {
 }
 
 const myPizza = new Pizza('small', 'pepper');
-myPizza.pizzaCrust = 'saus';
+myPizza.setCrust('thin');
 myPizza.bake();
-console.log(myPizza.pizzaCrust);
+myPizza.setToppins('sauages');
+myPizza.setToppins('olives');
+
+console.log(myPizza.getCrust());
+console.log(myPizza.getToppins());
