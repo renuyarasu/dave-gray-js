@@ -20,3 +20,8 @@ const myObject = {
 console.log(myObject.name);
 myObject.hello();
 console.log(typeof myObject);
+
+const sendJSON = JSON.stringify(myObject);
+console.log(sendJSON); // {"name":"VedaGna","hobbies":["eat","sleep","code"]}
+console.log(typeof sendJSON); //string
+console.log(sendJSON.name); // undefined
