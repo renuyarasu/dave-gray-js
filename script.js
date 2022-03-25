@@ -10,10 +10,18 @@ class Pizza {
         this.size = sizePizza;
         this.crust = 'original';
     }
+    get pizzaCrust() {
+        return this.crust;
+    }
+    set pizzaCrust(pizzaCrust) {
+        this.crust = pizzaCrust;
+    }
     bake() {
         console.log(`Baking a ${this.size} ${this.type} ${this.crust} crust pizza.`);
     }
 }
+
 const myPizza = new Pizza('small', 'pepper');
-myPizza.type = 'large';
+myPizza.pizzaCrust = 'saus';
 myPizza.bake();
+console.log(myPizza.pizzaCrust);
