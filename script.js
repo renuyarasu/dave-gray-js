@@ -24,3 +24,5 @@ Creating new elements with a loop */
 
 const view1 = document.getElementById('view1');
 console.log(view1);
+const view2 = document.getElementsByClassName('view2');
+console.log(view2);
