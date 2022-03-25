@@ -48,10 +48,10 @@ const oddDivs = view1.querySelectorAll('div:nth-of-type(2n+1)');
 
 for (let i = 0; i < evenDivs.length; i++) {
     evenDivs[i].style.backgroundColor = 'crimson';
-    evenDivs[i].style.width = '150px';
-    evenDivs[i].style.height = '150px';
-    evenDivs[i].textContent = ('00');
-    evenDivs[i].innerHTML = '<h1>0</h1>';
-    evenDivs[i].style.justifyContent = 'flex-start';
+    // evenDivs[i].style.width = '150px';
+    // evenDivs[i].style.height = '150px';
+    // evenDivs[i].textContent = ('00');
+    // evenDivs[i].innerHTML = '<h1>0</h1>';
+    // evenDivs[i].style.justifyContent = 'flex-start';
 }
-console.log(evenDivs[0].parentElement.hasChildNodes());
+console.log(evenDivs[0].nextElementSibling.previousElementSibling.style.background = 'gold');
