@@ -17,7 +17,17 @@ when attempting to use a value in an inappropriate way. */
 
 "use strict"
 
-const myName = 'VedaGna';
-myName = 'Gnapika';
-console.log(myName);
-
+const makeError = () => {
+    try {
+        const name = 'VedaGna';
+        name = 'Gnapika';
+    } catch (err) {
+        console.warn(err);
+        console.table(err);
+        console.error(err);
+        console.error(err.name);
+        console.error(err.message);
+        console.error(err.stack);
+    }
+}
+makeError();
