@@ -21,8 +21,14 @@ Creating new elements
 Adding new property values to the element
 Appending the new element to the DOM
 Creating new elements with a loop */
-
+/* 
 const view1 = document.getElementById('view1');
 console.log(view1);
 const view2 = document.getElementsByClassName('view2');
 console.log(view2);
+ */
+const views = document.getElementsByClassName('view');
+console.log(views);
+
+const queryViews = document.querySelectorAll('.view');
+console.log(queryViews);
