@@ -40,5 +40,8 @@ const divs = document.querySelectorAll('div');
 const tagDiv = document.getElementsByTagName('div');
 // console.log(tagDiv);
 
-const evenDivs = view1.querySelectorAll('div:nth-of-type(2n)');
-console.log(evenDivs);
+const evenDivs = view1.querySelectorAll('div:nth-of-type(2n)')
+// console.log(evenDivs);
+
+const oddDivs = view1.querySelectorAll('div:nth-of-type(2n+1)');
+console.log(oddDivs);
