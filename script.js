@@ -15,6 +15,6 @@ const myObj = {
     }
 }
 
-localStorage.setItem('myLocalStore', JSON.stringify(myObj));
+localStorage.setItem('myLocalStore', JSON.stringify(myArray));
 const myLocalData = JSON.parse(localStorage.getItem('myLocalStore'));
 console.log(myLocalData); 
