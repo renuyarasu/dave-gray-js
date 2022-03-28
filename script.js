@@ -10,10 +10,19 @@
  reduce() computes a single value from the data */
 
 import { posts } from './posts.js';
-/* 
+
+/* // forEach();
 posts.forEach((post) => {
     console.log(post);
 }); */
 
+//filter();
 const filterPosts = posts.filter((post) => post.userId === 1);
 console.log(filterPosts);
+
+// map();
+const mapPosts = filterPosts.map((post) => post.id * 10);
+console.log(mapPosts);
+
+const reducePostsValue = mapPosts.reduce((sum, post) => sum + post);
+console.log(reducePostsValue); // 550
