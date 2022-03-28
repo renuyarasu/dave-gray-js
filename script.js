@@ -24,11 +24,11 @@ Current browser support for modules */
 // 'use strict';
 
 import playGuitar from './guitars.js';
-import {shredding, plucking} from './guitars.js';
+import {shredding as shred, plucking as pluck} from './guitars.js';
 
 
 console.log(playGuitar());
-console.log(shredding());
-console.log(plucking());
+console.log(shred());
+console.log(pluck());
 
 
