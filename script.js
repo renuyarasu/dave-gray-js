@@ -33,6 +33,7 @@ const initApp = () => {
     const view3 = document.querySelector('#view3');
     const myForm = document.querySelector('#myForm');
     myForm.addEventListener('submit', (e) => {
+        e.preventDefault();
         console.log('Submit event');
     })
 }
