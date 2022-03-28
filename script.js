@@ -1,39 +1,16 @@
 // JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours
 console.clear();
+// Web Storage API
+// The Web Storage API provides mechanisms by which browsers can store key/value pairs, in a much more intuitive fashion than using cookies.
+// We do not have to type window. It's implied. 
+// https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
+// sessionStorage |  localStorage (persistent data)
 
-/* // JavaScript: Event Listeners
-=================================
-Insure the DOM is available to interact with
-How to load your script for DOM interaction
-Syntax: addEventListener(event, function, useCapture)
-Using a function name in the event listener
-Removing a function with a name: removeEventListener()
-Using an anonymous function in the event listener
-Listening for the readystatechange event
-Constructing an initApp() function
-Event Bubbling
-Event Capturing
-Event Propagation and stopPropagation()
-event.target usage
-classList, add, remove, and toggle
-Listening for a HTML Form submit event
-HTML Form default behavior
-Prevent default behavior with event.preventDefault() */
-
-// syntax: addEventListenser(event, function, useCapture)
-
-document.addEventListener('readystatechange', (e) => {
-    if (e.target.readyState === 'complete') {
-        console.log('readyState: complete');
-        initApp();
+const myObj = {
+    name: 'VedaGna',
+    logName: function () {
+        console.log(this.name);
     }
-});
-
-const initApp = () => {
-    const view3 = document.querySelector('#view3');
-    const myForm = document.querySelector('#myForm');
-    myForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        console.log('Submit event');
-    })
 }
+const myArray = ['Eat', 'Sleep', 'Code'];
+myObj.logName();
