@@ -21,7 +21,14 @@ Rename imports
 Import the full namespace
 JavaScript Class export and import example
 Current browser support for modules */
-'use strict';
+// 'use strict';
 
+import playGuitar from './guitars.js';
+import {shredding, plucking} from './guitars.js';
+
+
+console.log(playGuitar());
+console.log(shredding());
+console.log(plucking());
 
 
