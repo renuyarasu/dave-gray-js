@@ -27,6 +27,11 @@ Current browser support for modules */
 // import {shredding as shred, plucking as pluck} from './guitars.js';
 
 import * as Guitars from './guitars.js';
+import User from './user.js';
+
+const me = new User('VedaGna', 'veda@email.com');
+console.log(me);
+console.log(me.greet());
 
 console.log(Guitars.default());
 console.log(Guitars.shredding());
