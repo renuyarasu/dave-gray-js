@@ -13,6 +13,5 @@ const myObj = {
     }
 }
 const myArray = ['Eat', 'Sleep', 'Code'];
-// myObj.logName(); // VedaGna
 
 sessionStorage.getItem('mySessionStore', myObj); // [object Object]
