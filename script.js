@@ -23,12 +23,13 @@ JavaScript Class export and import example
 Current browser support for modules */
 // 'use strict';
 
-import playGuitar from './guitars.js';
-import {shredding as shred, plucking as pluck} from './guitars.js';
+// import playGuitar from './guitars.js';
+// import {shredding as shred, plucking as pluck} from './guitars.js';
 
+import * as Guitars from './guitars.js';
 
-console.log(playGuitar());
-console.log(shred());
-console.log(pluck());
+console.log(Guitars.default());
+console.log(Guitars.shredding());
+console.log(Guitars.plucking());
 
 
