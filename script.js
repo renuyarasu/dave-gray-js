@@ -15,6 +15,6 @@ const myObj = {
     }
 }
 
-sessionStorage.setItem('mySessionStore', JSON.stringify(myObj));
+sessionStorage.setItem('mySessionStore', JSON.stringify(myArray));
 const mySessionData = JSON.parse(sessionStorage.getItem('mySessionStore'));
-console.log(mySessionData);
+console.log(mySessionData); // (3) ['Eat', 'Sleep', 'Code']
