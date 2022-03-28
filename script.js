@@ -20,20 +20,19 @@ Listening for a HTML Form submit event
 HTML Form default behavior
 Prevent default behavior with event.preventDefault() */
 
-
 // syntax: addEventListenser(event, function, useCapture)
 
-const nav = document.querySelector('nav');
-const h1 = document.querySelector('h1');
+document.addEventListener('readystatechange', (e) => {
+    if (e.target.readyState === 'complete') {
+        console.log('readyState: complete');
+        initApp();
+    }
+});
 
-const doSomething = () => {
-    console.log('Doing Something!');
+const initApp = () => {
+    const view3 = document.querySelector('#view3');
+    const myForm = document.querySelector('#myForm');
+    myForm.addEventListener('submit', (e) => {
+        console.log('Submit event');
+    })
 }
-
-h1.addEventListener('click', doSomething, false);
-h1.removeEventListener('click', doSomething, true);
-
-h1.addEventListener('click', function (e) {
-    console.log(e.target); // <h1>Doing Something!​</h1>​
-    e.target.textContent = 'Clicked!' // <h1>​Clicked!​</h1>
-})
