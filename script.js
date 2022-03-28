@@ -1,5 +1,6 @@
 // JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours
 console.clear();
+
 /* // JavaScript: Event Listeners
 =================================
 Insure the DOM is available to interact with
@@ -20,4 +21,14 @@ HTML Form default behavior
 Prevent default behavior with event.preventDefault() */
 
 
+// syntax: addEventListenser(event, function, useCapture)
 
+const nav = document.querySelector('nav');
+const h1 = document.querySelector('h1');
+
+const doSomething = () => {
+    console.log('Doing Something!');
+}
+
+h1.addEventListener('click', doSomething, false);
+h1.removeEventListener('click', doSomething, true);
