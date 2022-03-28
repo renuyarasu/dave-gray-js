@@ -9,4 +9,9 @@
  map() lets you transform the data
  reduce() computes a single value from the data */
 
- 
+import { posts } from './posts.js';
+
+posts.forEach((post) => {
+    console.log(post);
+});
+// console.clear();
