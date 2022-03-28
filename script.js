@@ -10,8 +10,10 @@
  reduce() computes a single value from the data */
 
 import { posts } from './posts.js';
-
+/* 
 posts.forEach((post) => {
     console.log(post);
-});
-// console.clear();
+}); */
+
+const filterPosts = posts.filter((post) => post.userId === 1);
+console.log(filterPosts);
