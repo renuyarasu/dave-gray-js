@@ -32,3 +32,8 @@ const doSomething = () => {
 
 h1.addEventListener('click', doSomething, false);
 h1.removeEventListener('click', doSomething, true);
+
+h1.addEventListener('click', function (e) {
+    console.log(e.target); // <h1>Doing Something!​</h1>​
+    e.target.textContent = 'Clicked!' // <h1>​Clicked!​</h1>
+})
