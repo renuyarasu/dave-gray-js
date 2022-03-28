@@ -1,8 +1,11 @@
 // Guitars
 
-const playGuitar = () => 'Playing Guitar...';
-const shredding = () => 'Shredding some licks...';
-const plucking = () => 'Plucking the strings...';
+export default function playGuitar() {
+    return 'Playing Guitar...';
+};
 
-export default playGuitar;
-export { shredding, plucking }
+export const shredding = () => 'Shredding some licks...';
+export const plucking = () => 'Plucking the strings...';
+
+// export default playGuitar;
+// export { shredding, plucking }
