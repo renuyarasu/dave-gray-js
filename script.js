@@ -6,12 +6,15 @@ console.clear();
 // https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
 // sessionStorage |  localStorage (persistent data)
 
+const myArray = ['Eat', 'Sleep', 'Code'];
 const myObj = {
     name: 'VedaGna',
+    hobbies: ['Eat', 'Sleep', 'Code'],
     logName: function () {
         console.log(this.name);
     }
 }
-const myArray = ['Eat', 'Sleep', 'Code'];
 
-sessionStorage.getItem('mySessionStore', myObj); // [object Object]
+sessionStorage.setItem('mySessionStore', JSON.stringify(myObj));
+const mySessionData = JSON.parse(sessionStorage.getItem('mySessionStore'));
+console.log(mySessionData);
