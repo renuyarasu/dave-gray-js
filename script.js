@@ -18,6 +18,7 @@ const myObj = {
 localStorage.setItem('myLocalStore', JSON.stringify(myArray));
 // localStorage.removeItem('myLocalStore');
 // localStorage.clear();
-const key = localStorage.key(0);
+// const key = localStorage.key(0);
+const storeLength = localStorage.length;
 const myLocalData = JSON.parse(localStorage.getItem('myLocalStore'));
-console.log(key); 
+console.log(storeLength);  //1
