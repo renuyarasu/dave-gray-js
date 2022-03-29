@@ -2,3 +2,19 @@
 console.clear();
 // Fetch API
 // Callbacks | Promises / Thenables / Async & Await
+
+// Callbacks
+function firstFunction(parameters, callback) {
+    // do stuff
+    callback();
+}
+
+// AKA 'Callback Hell'
+firstFunction(para, function () {
+    secondFunction(para, function () {
+        thirdFunction(para, function () {
+                // ...
+        
+        });
+    });
+});
