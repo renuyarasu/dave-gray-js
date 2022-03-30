@@ -7,23 +7,24 @@ console.clear();
 // 3 states: Pending, Fulfilled, Rejected
 
 const myPromise = new Promise((res, rej) => {
-    const error = true;
+    const error = false;
     if (!error) {
         res('Yes! resolved the promise.')
     } else {
         rej('No! rejected the promise.')
     }
 });
-// console.log(myPromise);
 
-// Thenables
-myPromise.then(value => {
-    return value + 1;
+const myNewPromise = new Promise((res, rej) => {
+    setTimeout(() => {
+        res('myNewPromise! resolved the promise.')
+    }, 2000);
+});
+
+myNewPromise.then(value => {
+    console.log(value);
 })
-    .then(newValue => {
-        console.log(newValue);
-    })
 
-    .catch(err => {
-        console.error(err); // No! rejected the promise.
-    })
+myPromise.then(value => {
+    console.log(value);
+})
