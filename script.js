@@ -14,4 +14,13 @@ const myPromise = new Promise((res, rej) => {
         rej('No! rejected the promise.')
     }
 });
-console.log(myPromise);
+// console.log(myPromise);
+
+// Thenables
+myPromise.then(value => {
+    return value + 1;
+})
+    .then(newValue => {
+        console.log(newValue);
+    })
+    
