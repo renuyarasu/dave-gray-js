@@ -3,18 +3,15 @@ console.clear();
 // Fetch API
 // Callbacks | Promises / Thenables / Async & Await
 
-// Callbacks
-function firstFunction(parameters, callback) {
-    // do stuff
-    callback();
-}
+// Promises
+// 3 states: Pending, Fulfilled, Rejected
 
-// AKA 'Callback Hell'
-firstFunction(para, function () {
-    secondFunction(para, function () {
-        thirdFunction(para, function () {
-                // ...
-        
-        });
-    });
+const myPromise = new Promise((res, rej) => {
+    const error = false;
+    if (!error) {
+        res('Yes! resolved the promise.')
+    } else {
+        rej('No! rejected the promise.')
+    }
 });
+console.log(myPromise);
