@@ -7,7 +7,7 @@ console.clear();
 // 3 states: Pending, Fulfilled, Rejected
 
 const myPromise = new Promise((res, rej) => {
-    const error = false;
+    const error = true;
     if (!error) {
         res('Yes! resolved the promise.')
     } else {
@@ -23,4 +23,7 @@ myPromise.then(value => {
     .then(newValue => {
         console.log(newValue);
     })
-    
+
+    .catch(err => {
+        console.error(err); // No! rejected the promise.
+    })
