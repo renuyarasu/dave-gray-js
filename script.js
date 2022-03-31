@@ -5,12 +5,10 @@ console.clear();
 
 // workflow function
 
-const getAllUserEmails = async () => {
-    const reseponse = await fetch('https://jsonplaceholder.typicode.com/users');
-    const jsonData = await reseponse.json();
-    const userEmailArray = jsonData.map(user => {
-        return user.email;
-    });
-    console.log(userEmailArray);
+const getAddress = async ()=>{
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const jsonData = await res.json();
+    const userAddress = jsonData.map(user=>user.address.city)
+    console.log(userAddress);
 }
-getAllUserEmails();
+getAddress();
