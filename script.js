@@ -3,12 +3,12 @@ console.clear();
 // Fetch API
 // Callbacks | Promises / Thenables / Async & Await
 
-// workflow function
+// 2nd parameter of Fetch is a object
 
-const getAddress = async ()=>{
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    const jsonData = await res.json();
-    const userAddress = jsonData.map(user=>user.address.city)
-    console.log(userAddress);
+const requestJoke = async (firstName, lastName) => {
+    const response = await fetch(`http://api.icndb.com/jokes/random?firstName=${firstName}&lastName=${lastName}`);
+    const jsonResponse = await response.json();
+    const getJoke = jsonResponse.value.joke;
+    console.log(getJoke);
 }
-getAddress();
+requestJoke('Bruce', 'Lee'); // Bruce Lee once shat blood - the blood of 11,940 natives he had killed and eaten.
