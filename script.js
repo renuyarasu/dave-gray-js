@@ -4,20 +4,20 @@ console.clear();
 // Callbacks | Promises / Thenables / Async & Await
 
 // Promises
-// 3 states: Pending, Fulfilled, Rejected
+// Async & Await
 
-const users = fetch('https://jsonplaceholder.typicode.com/users');
-
-// Pending
-console.log(users);
-
-fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => {
-        // console.log(response);
-        return response.json();
-    })
-    .then(data => {
-        data.forEach(user => {
-            console.log(user);
-        })
-    });
+const users = {
+    userList: []
+}
+const myFunction = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
+    const jsonUserData = await response.json();
+    return jsonUserData;
+}
+const otherFunction = async () => {
+    const data = await myFunction();
+    users.userList = data;
+    console.log(users.userList);
+}
+otherFunction();
+console.log(users.userList);
