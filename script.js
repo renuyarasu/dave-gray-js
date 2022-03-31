@@ -3,21 +3,14 @@ console.clear();
 // Fetch API
 // Callbacks | Promises / Thenables / Async & Await
 
-// Promises
-// Async & Await
+// workflow function
 
-const users = {
-    userList: []
+const getAllUserEmails = async () => {
+    const reseponse = await fetch('https://jsonplaceholder.typicode.com/users');
+    const jsonData = await reseponse.json();
+    const userEmailArray = jsonData.map(user => {
+        return user.email;
+    });
+    console.log(userEmailArray);
 }
-const myFunction = async () => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users');
-    const jsonUserData = await response.json();
-    return jsonUserData;
-}
-const otherFunction = async () => {
-    const data = await myFunction();
-    users.userList = data;
-    console.log(users.userList);
-}
-otherFunction();
-console.log(users.userList);
+getAllUserEmails();
