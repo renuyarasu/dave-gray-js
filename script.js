@@ -15,4 +15,14 @@ document.getElementById('phoneNum').addEventListener('input', (event) => {
         input.classList.remove('invalid');
         format.classList.remove('block');
     }
-})
+});
+
+document.getElementById('phoneForm').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const input = document.getElementById('phoneNum');
+    const reqex = /[()-. ]/g;
+    const savedPhoneNum = input.value.replaceAll(reqex, '');
+    console.log(savedPhoneNum);
+});
+
+
