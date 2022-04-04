@@ -25,4 +25,14 @@ document.getElementById('phoneForm').addEventListener('submit', (event) => {
     console.log(savedPhoneNum);
 });
 
-
+document.getElementById('textForm').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const input = document.getElementById('textEntry');
+    const reqex = / {2,}/g;
+    const nextText = input.value.replaceAll(reqex, '').trim();
+    console.log(nextText);
+    const encodedInputText = encodeURI(input.value);
+    const encodedCleanText = encodeURI(nextText);
+    console.log(encodedInputText);
+    console.log(encodedCleanText);
+});
