@@ -37,8 +37,23 @@
     (7:33:06) Applying RegEx in JavaScript -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Dave Gray</h1>
+  <body>    
+    <main class="flexCenter">
+      <section class="phoneView flexCenter">
+        <form id="phoneForm" class="phoneForm flexCenter">
+          <label for="phoneNum">Please enter your phone number:</label>
+          <input id="phoneNum" class="phoneNum" type="text" autocomplete="off"/>
+          <p class="phoneFormat">Examples: (555)555-5555 or 123-456-7899 </p>
+        </form>
+      </section>
+      <section class="textView flexCenter">
+        <form id="textForm" class="textForm flexCenter">
+          <label for="textEntry">Please enter some text:</label>
+          <input id="textEntry" class="textEntry" type="text" autocomplete="off"/>
+        </form>
+      </section>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
