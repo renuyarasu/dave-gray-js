@@ -17,6 +17,7 @@ document.getElementById('phoneNum').addEventListener('input', (event) => {
     }
 });
 
+// Submit Form
 document.getElementById('phoneForm').addEventListener('submit', (event) => {
     event.preventDefault();
     const input = document.getElementById('phoneNum');
@@ -25,6 +26,7 @@ document.getElementById('phoneForm').addEventListener('submit', (event) => {
     console.log(savedPhoneNum);
 });
 
+// Clean Text
 document.getElementById('textForm').addEventListener('submit', (event) => {
     event.preventDefault();
     const input = document.getElementById('textEntry');
